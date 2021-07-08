@@ -1,0 +1,21 @@
+TRANSITION 3 (second stage - third stage)
+
+Call:
+lm(formula = PST ~ I(year - 2005) * Set, data = RDD)
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-0.0153850 -0.0045095 -0.0003123  0.0046806  0.0230027 
+
+Coefficients:
+                        Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            0.0306917  0.0040009   7.671 6.58e-08 ***
+I(year - 2005)         0.0070846  0.0004545  15.589 4.68e-14 ***
+Setpre                 0.0069923  0.0065275   1.071    0.295    
+I(year - 2005):Setpre -0.0062029  0.0008352  -7.426 1.15e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.00838 on 24 degrees of freedom
+Multiple R-squared:  0.9548,	Adjusted R-squared:  0.9492 
+F-statistic: 169.1 on 3 and 24 DF,  p-value: 2.845e-16

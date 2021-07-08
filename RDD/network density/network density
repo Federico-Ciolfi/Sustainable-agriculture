@@ -1,0 +1,19 @@
+Call:
+lm(formula = density ~ I(year - 2005) * set, data = RDD)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.019176 -0.009108 -0.003719  0.008735  0.032346 
+
+Coefficients:
+                        Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            0.0502206  0.0058762   8.546 1.18e-09 ***
+I(year - 2005)         0.0068956  0.0006675  10.331 1.47e-11 ***
+setpre                 0.0043233  0.0083114   0.520    0.607    
+I(year - 2005):setpre -0.0043307  0.0008434  -5.135 1.46e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.01231 on 31 degrees of freedom
+Multiple R-squared:  0.9338,	Adjusted R-squared:  0.9274 
+F-statistic: 145.8 on 3 and 31 DF,  p-value: < 2.2e-16
