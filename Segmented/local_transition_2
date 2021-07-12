@@ -1,0 +1,27 @@
+***Regression Model with Segmented Relationship(s)***
+
+Call: 
+segmented.lm(obj = my.lm, seg.Z = ~year, psi = list(year = 1993))
+
+Estimated Break-Point(s):
+               Est. St.Err
+psi1.year 1992.517  0.933
+
+Meaningful coefficients of the linear terms:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -8.1441454  1.1778001  -6.915 4.94e-06 ***
+year         0.0041008  0.0005922   6.925 4.85e-06 ***
+U1.year     -0.0032191  0.0006475  -4.971       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.003133 on 15 degrees of freedom
+Multiple R-Squared: 0.9398,  Adjusted R-squared: 0.9277 
+
+Convergence attained in 1 iter. (rel. change 1.2327e-07)
+
+*** Slopes ***
+
+            Est.    St.Err. t value CI(95%).l CI(95%).u
+slope1 0.0041008 0.00059216  6.9251 0.0028386 0.0053629
+slope2 0.0008817 0.00026203  3.3649 0.0003232 0.0014402
